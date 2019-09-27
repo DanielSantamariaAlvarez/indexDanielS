@@ -144,6 +144,10 @@ header .contenedor-texto .texto .profesion{
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.main .trabajos .contenedor-trabajos a{
+  text-decoration: none;
+}
 .main .trabajos .contenedor-trabajos .trabajo{
   width: 23%;
   margin-bottom: 40px;
@@ -152,6 +156,7 @@ header .contenedor-texto .texto .profesion{
 .main .trabajos .contenedor-trabajos .trabajo .thumb{
   width: 100%;
   margin-bottom: 10px;
+
 }
 
 .main .trabajos .contenedor-trabajos .trabajo .thumb img{
