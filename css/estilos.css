@@ -10,6 +10,20 @@ body{
   overflow: hidden;
 }
 
+/*-------------------botón arriba------------------------*/
+.ir-arriba{
+  display: none;
+  padding: 20px 20px 10px 20px;
+  background: #FB8C00;
+  font-size: 20px;
+  color:#fff;
+  cursor:pointer;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+
+}
+
 /*------------------HEADER---------------------------*/
 header{
   width: 100%;
@@ -87,6 +101,7 @@ header .contenedor-texto .texto .profesion{
   vertical-align: top;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.2);
+
 }
 
 .main .acerca-de .text{
