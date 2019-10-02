@@ -1,0 +1,94 @@
+.precios{
+  background: url('../img/precios-bg.jpg'), #727171;
+  background-size: cover;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+  .titulo{
+    margin-bottom: 70px;
+    color:#fff;
+    font-weight: 300;
+  }
+  .plan{
+
+    padding: 35px 0;
+    text-align: center;
+    .nombre{
+      text-align: center;
+      font-size: 28px;
+      font-weight: 300;
+    }
+    .precio{
+      font-size: 40px;
+      font-weight: 300;
+    }
+    .caracteristicas{
+      list-style: none;
+      padding:0 20px;
+      margin-bottom: 50px;
+      li{
+        font-size: 18px;
+        padding: 15px 0;
+        border-bottom: 1px solid #dedede;
+      }
+      .btn{
+        width: 70%;
+        font-size: 16px;
+        padding: 15px 0;
+        text-align: center;
+        display: inline-block;
+      }
+    }
+
+    &.verde{
+      background: #fff;
+      .precio, .nombre{
+        color:#86b773;
+      }
+      .btn{
+        color: #86b773;
+        border: 2px solid #86b773;
+        border-radius: 100px;
+        &:hover{
+          background: #86b773;
+          color: #fff;
+
+        }
+      }
+    }
+    &.activo{
+      background: #4c8dce;
+      color: #fff;
+      .btn{
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 100px;
+        &:hover{
+          background: #fff;
+          color: #4c8dce;
+
+        }
+      }
+    }
+    &.naranja{
+      background: #fff;
+      .precio, .nombre{
+        color:#FFD019;
+      }
+      .btn{
+        color: #FFD019;
+        border: 2px solid #FFD019;
+        border-radius: 100px;
+        &:hover{
+          background: #FFD019;
+          color: #fff;
+
+        }
+      }
+    }
+
+
+
+
+  }
+}

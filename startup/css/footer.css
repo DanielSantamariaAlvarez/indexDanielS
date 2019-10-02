@@ -1,0 +1,36 @@
+footer .direccion {
+  background: #3c4045;
+  color: #fff;
+  padding: 38px 0; }
+  footer .direccion .titulo {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-bottom: 30px; }
+  footer .direccion .calle,
+  footer .direccion .correo {
+    margin-bottom: 10px; }
+  footer .direccion .logo img {
+    margin-top: 40px;
+    width: 300px; }
+
+footer .social {
+  text-align: center;
+  padding: 20px 0; }
+  footer .social a {
+    font-size: 22px;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 20px;
+    width: 50px;
+    color: #fff;
+    background: #000;
+    border-radius: 100px; }
+    footer .social a:hover {
+      text-decoration: none; }
+    footer .social a.facebook {
+      background: #3b5998; }
+    footer .social a.twitter {
+      background: #55acee; }
+    footer .social a.youtube {
+      background: #cd201f; }

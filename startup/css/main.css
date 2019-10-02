@@ -1,0 +1,42 @@
+.main .caracteristicas {
+  padding: 70px 0; }
+  .main .caracteristicas .titulo {
+    text-align: center;
+    font-family: "Open Sans", Arial,sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 70px; }
+  .main .caracteristicas .caracteristica {
+    text-align: center; }
+    .main .caracteristicas .caracteristica .icono {
+      vertical-align: top;
+      margin-bottom: 30px; }
+    .main .caracteristicas .caracteristica .primera_linea {
+      font-weight: 700;
+      margin-bottom: 30px;
+      font-size: 20px; }
+    .main .caracteristicas .caracteristica .parrafo {
+      margin-bottom: 30px;
+      line-height: 20px; }
+
+.main .fotos {
+  margin-bottom: 70px; }
+  .main .fotos .thumb img {
+    border-radius: 3px;
+    width: 100%;
+    vertical-align: top; }
+  .main .fotos .titulo {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 300; }
+    .main .fotos .titulo.azul {
+      color: #4facd3; }
+    .main .fotos .titulo.naranja {
+      color: #ddb146; }
+  .main .fotos .parrafo {
+    line-height: 28px; }
+  .main .fotos .derecha {
+    text-align: right; }
