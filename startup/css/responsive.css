@@ -21,10 +21,18 @@
     margin-top: 0; }
   .main .clientes .cliente {
     margin-bottom: 40px; }
-  footer .direccion .logo img {
-    width: 200px; } }
+  footer .direccion .logo {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    footer .direccion .logo img {
+      width: 200px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main .caracteristicas .caracteristica {
     margin-bottom: 40px; }
   .main .fotos .foto {
@@ -36,8 +44,24 @@
   .main .precios .precio {
     margin-bottom: 20px; }
   footer .direccion {
-    text-align: center; }
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
     footer .direccion .logo {
-      margin-top: 20px; }
-      footer .direccion .logo img {
-        margin-left: 150px; } }
+      padding-left: 50px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.ir-arriba {
+  display: none;
+  padding: 20px 20px 10px 20px;
+  background: #FB8C00;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
