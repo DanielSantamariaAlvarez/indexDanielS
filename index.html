@@ -1,141 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="img/faviconpng.png" />
-  <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d83b033f01.js"></script>
-  <title>Daniel Santamaría</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d83b033f01.js"></script>
+    <title>Daniel Santamaría Álvarez</title>
 </head>
 <body>
-  <span class="ir-arriba"><i class="fas fa-sort-up"></i></span>
-  <header>
-    <div class="contenedor">
-      <nav class = "menu">
-        <a href="#" id="btn-acerca-de">Acerca de</a>
-        <a href="#" id="btn-trabajos">Trabajos</a>
-        <a href="#" id="btn-contacto">Contacto</a>
-      </nav>
+<div id="particles-js"></div>
 
-      <div class="contenedor-texto">
-        <div class="texto">
-          <h1 class ="nombre">Daniel Santamaría A.</h1>
-          <h2 class="profesion">Estudiante y desarrollador web</h2>
+    <!-- Boton arriba -->
+    <span class="ir-arriba"><i class="fas fa-sort-up"></i></span>
 
-        </div>
+    <!-- Header -->
+    <header>
+      <div class="container ">
+            <div class="row contenedor_logo_menu ">
+				        <div class="logo col-sm-12 col-md-6">
+					        <a href="http://datomic.team/"><img src="img/00.png" alt="" width="100%"></a>
+				        </div>
+
+				        <div class="navi col-sm-12 col-md-6">
+					        <a href="#"id="btn-trabajos">Trabajos</a>
+					        <a href="#"id="btn-contacto">Contacto</a>
+                  <a href="#"id="btn-blog">Blog</a>
+				        </div>
+            </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section class="main">
-    <section class="acerca-de" id="acerca-de">
-      <div class="contenedor">
-        <div class="foto">
-          <img src="./img/yoc.jpg" alt="Daniel Santamaría" width="115" >
+    <!-- Main -->
+    <section class="main">
+
+      <div class="textin">
+        <h2 class="primera-linea">¡Bienvenido!</h2>
+        <p class="segunda-linea">Soy <strong>Daniel Santamaría Álvarez</strong> y soy:
+          <strong><span class="word"id="word">Estudiante</span></strong></p>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section class="galeria" id="galeria">
+      <div class="container">
+        <div class="trabajos">
+          <h2 id="trabajos">Trabajos</h2>
         </div>
-        <div class="texto">
-          <h3 class="titulo">¿Quién soy?</h3>
-          <p>Soy un estudiante de ingeniería de sistemas en la Universidad de Los andes.<br/>
-             <span class="bold">Example</span> <br/> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos itaque quia consequuntur ad. Explicabo similique eius, nesciunt quae cumque rerum hic
-             tempore autem <span class="bold">fugit</span> natus. Repellendus atque, aliquid similique molestiae?</p>
+        <!-- cafeManzano -->
+        <div class="row trabajo naranja">
+          <div class="imagen col-md-6">
+            <img src="img/cafemanzano.png" alt="">
+          </div>
+          <div class="descripcion col-md-6">
+            <div class="titulo">Café Manzano</div>
+            <div class="breve">
+              <p>
+                Un secillo diseño para presentar un restaurante moderno.
+                Donde se muestran imagenes del negocio e información relevante de éste.
+                Tambien cuenta con una pequeña galeria de sus platos y la ubicación en un mapa para saber como llegar
+              </p>
+            </div>
+            <div class="propiedades">HTML - CSS - JS</div>
+            <a href="restaurante/index.html"><button class="btn-success btn">Dale un vistazo!</button></a>
+          </div>
+        </div>
+        <!-- Tecnologia -->
+        <div class="row trabajo ">
+          <div class="descripcion col-md-6 ">
+            <div class="titulo derecha">Tienda Tecnológica</div>
+            <div class="breve">
+              <p class="derecha">
+                Una tienda vende gracias a como da a conocer sus productos.
+                Acá se muestra en un carruces los distintos productos desde que la persona entra en el sitio
+                tambien se encuentran organisados distintos productos para su respectiva venta.
+              </p>
+            </div>
+            <div class="propiedades derecha">HTML - CSS</div>
+            <a href="tecnologia/index.html"><button class="btn-success btn derecha" >Dale un vistazo!</button></a>
+          </div>
+          <div class="imagen col-md-6">
+            <img src="img/tiendatecno.png" alt="">
+          </div>
+        </div>
+        <!-- StartUp -->
+        <div class="row trabajo  naranja">
+          <div class="imagen col-md-6">
+            <img src="img/startup.png" alt="">
+          </div>
+          <div class="descripcion col-md-6">
+            <div class="titulo">StartUp</div>
+            <div class="breve">
+              <p>
+                La perfecta carta de presentación de tu portafolio de servicios.
+                Donde se muestra tu propuesta acompañada de imagenes del negocio e información relevante de éste.
+                Exibir reviews de tus clientes y los proyectos con quienes has trabajado es el perefcto valor agregado para
+                captar a potenciales clientes.
+              </p>
+            </div>
+            <div class="propiedades">HTML - CSS - JS</div>
+            <a href="startup/index.html"><button class="btn-success btn">Dale un vistazo!</button></a>
+          </div>
         </div>
       </div>
     </section>
-    <section class="trabajos" id="trabajos">
-      <div class="contenedor">
-        <h3 class="titulo">Trabajos</h3>
-        <div class="contenedor-trabajos">
-            <div class="trabajo">
-              <a target="_blank"tittle="Cafe Manzano" href="restaurante/index.html">
-                <div class="thumb">
-                   <img src="img/expo.jpg" alt="Lorem ipsum" width="500">
-                </div>
-                <div class="descripcion">
-                  <p class="nombre">Café Manzano</p>
-                  <p class="categoria">HTML - CSS - JavaScript</p>
-                </div>
-              </a>
-            </div>
-            <div class="trabajo">
-              <a target="_blank"tittle="Tecnología" href="tecnologia/index.html">
-                <div class="thumb">
-                  <img src="img/1.jpg" alt="Lorem ipsum" width="500">
-                </div>
-                <div class="descripcion">
-                  <p class="nombre">Tecnología</p>
-                  <p class="categoria">HTML - CSS</p>
-                </div>
-              </a>
-            </div>
-            <div class="trabajo">
-              <a target="_blank" href="startup/index.html">
-                <div class="thumb">
-                  <img src="img/3.jpg" alt="Star" width="500">
-                </div>
-                <div class="descripcion">
-                  <p class="nombre">StartUp</p>
-                  <p class="categoria">HTML - CSS - PHP</p>
-                </div>
 
-              </a>
-            </div>
-            <div class="trabajo">
-              <div class="thumb">
-                <img src="img/4.jpg" alt="Lorem ipsum" width="500">
-              </div>
-              <div class="descripcion">
-                <p class="nombre">Lorem ipsum</p>
-                <p class="categoria">HTML - CSS - PHP</p>
-              </div>
-            </div>
-            <div class="trabajo">
-              <div class="thumb">
-                <img src="img/5.jpg" alt="Lorem ipsum" width="500">
-              </div>
-              <div class="descripcion">
-                <p class="nombre">Lorem ipsum</p>
-                <p class="categoria">HTML - CSS - PHP</p>
-              </div>
-            </div>
-            <div class="trabajo">
-              <div class="thumb">
-                <img src="img/6.jpg" alt="Lorem ipsum" width="500">
-              </div>
-              <div class="descripcion">
-                <p class="nombre">Lorem ipsum</p>
-                <p class="categoria">HTML - CSS - PHP</p>
-              </div>
-            </div>
-            <div class="trabajo">
-              <div class="thumb">
-                <img src="img/7.jpg" alt="Lorem ipsum" width="500">
-              </div>
-              <div class="descripcion">
-                <p class="nombre">Lorem ipsum</p>
-                <p class="categoria">HTML - CSS - PHP</p>
-              </div>
-            </div>
-            <div class="trabajo">
-              <div class="thumb">
-                <img src="img/8.jpg" alt="Lorem ipsum" width="500">
-              </div>
-              <div class="descripcion">
-                <p class="nombre">Lorem ipsum</p>
-                <p class="categoria">HTML - CSS - PHP</p>
-              </div>
-            </div>
-    </div>
-    </section>
-  </section>
-<footer>
-    <section class="contacto" id="contacto">
+    <!-- Contacto -->
+    <section class=" container contacto" >
       <div class="contenedor">
-        <h3 class="titulo">Contacto</h3>
-        <form action="" class="formulario">
+        <h3 class="titulo" id="contacto">Contacto</h3>
+        <form action="js/enviar.php" method="post"class="formulario">
           <input type="text" placeholder="Nombre" name="nombre"required>
           <input type="email" placeholder="Correo" name="correo"required>
           <textarea name="mensaje" placeholder="Mensaje"></textarea>
@@ -143,16 +120,29 @@
         </form>
       </div>
     </section>
-    <section class="redes-sociales">
-      <div class="contenedor">
-        <a target="_blank" href="https://twitter.com/Daniel_SA06"class="twitter"><i class="fab fa-twitter"></i></a>
-        <a target="_blank" href="https://www.facebook.com/daniel.santamariaalvarez.1?ref=bookmarks"class="facebook"><i class="fab fa-facebook"></i></a>
-        <a target="_blank" href="https://www.youtube.com/channel/UC-S_UiKwf6jKhba9rTeLY7Q?view_as=subscriber"class="youtube"><i class="fab fa-youtube"></i></a>
-      </div>
-  </section>
-</footer>
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/efectos.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="redes-sociales">
+          <a target="_blank" href="https://twitter.com/Daniel_SA06"class="twitter"><i class="fab fa-twitter"></i></a>
+          <a target="_blank" href="https://www.facebook.com/daniel.santamariaalvarez.1?ref=bookmarks"class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UC-S_UiKwf6jKhba9rTeLY7Q?view_as=subscriber"class="youtube"><i class="fab fa-youtube"></i></a>
+          <a target="_blank" href="https://github.com/DanielSantamariaAlvarez/indexDanielS"class="github"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://www.instagram.com/daniel_santamaria_a/"class="twitter"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="copyright">
+          Daniel Santamaría Álvarez y Datomic.team - Todos los derechos reservados
+        </div>
+
+    </footer>
+
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/efectos.js"></script>
+    <script src="js/app.js">
+
+    </script>
 </body>
 </html>

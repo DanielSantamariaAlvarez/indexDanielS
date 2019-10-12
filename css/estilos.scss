@@ -1,0 +1,259 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+
+  #particles-js{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+}
+.ir-arriba{
+    display: none;
+    padding: 15px 20px 10px 20px;
+    background: #2ecc71;
+    font-size: 20px;
+    color:#fff;
+    cursor:pointer;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    border-radius: 10px;
+    z-index: 100;
+
+  }
+
+  header{
+    padding-top: 18px;
+    // background:#fff;
+
+      .navi{
+        text-align: center;
+        padding: 35px 0;
+        a{
+              display: inline-block;
+              text-decoration: none;
+              color: #e67e22;
+              margin-left: 10%;
+              font-weight: 600;
+              font-size: 20px;
+              position: relative;
+              &:before{
+                content: "";
+                display: block;
+                width:0;
+                height: 2px;
+                background: #e67e22;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transition: all .2s;
+              }
+              &:hover:before{
+                width: 100%;
+                left: 0;
+
+              }
+
+        }
+
+      }
+  }
+
+  .main{
+    height: 80vh;
+    z-index: 99;
+
+
+    .textin{
+      padding: 16%;
+      .primera-linea{
+        text-align: center;
+        font-weight: 600;
+        font-size: 40px;
+      }
+      .segunda-linea{
+        text-align: center;
+        font-weight: 400;
+        font-size: 30px;
+
+      }
+    }
+
+  }
+
+
+// galeria----------------------------------------------
+.galeria{
+  background: rgba(255,255,255,.6);
+  .trabajos{
+    padding: 16px;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    h2{
+      font-size: 36px;
+      font-weight: 500;
+      color: #e67e22;
+      margin-bottom: 40px;
+    }
+  }
+  // .naranja{
+  //   background: rgba(243, 156, 18,.8);
+  // }
+  .trabajo{
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;;
+
+    .derecha{
+      text-align: right;
+
+    }
+    .imagen{
+      margin-top: 10px;
+      img{
+        width: 100%;
+      }
+    }
+    .descripcion{
+      .titulo{
+        font-size: 40px;
+      }
+      .breve{
+        p{
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+      .propiedades{
+        padding-bottom:  15px;
+        color: rgba(127, 140, 141,1.0);
+      }
+    }
+  }
+}
+
+
+// CONTACTO----------------------------------------------
+.contacto{
+  padding: 60px 60px;;
+  background: rgba(44, 62, 80,.9);
+  .titulo{
+    font-size: 36px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: #e67e22;
+    text-align: center;
+  }
+  .formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input[type="text"], input[type="email"],textarea{
+      border: 2px solid #cecece;
+      border-radius: 5px;
+      padding: 15px 20px;
+      font-size: 20px;
+      color: #a4a4a4;
+    }
+    input[type="text"]:focus , input[type="email"]:focus,textarea:focus{
+      border: 2px solid #3895ea;
+    }
+    input[type="text"], input[type="email"]{
+      width: 49%;
+      margin-bottom: 15px;
+    }
+    textarea{
+      width: 100%;
+      height: 100px;
+      min-height: 100px;
+      max-height: 300px;
+      margin-bottom: 15px;
+    }
+    .boton{
+      margin: auto;
+      background: #3895ea;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 15px 40px;
+      cursor:pointer;;
+    }
+    .boton:hover{
+      background: #3862ea;
+    }
+  }
+}
+
+
+// FOOTER---------------------------------------------------------------------
+footer{
+  margin-top: 20px;
+text-align: center;
+  .redes-sociales{
+    margin-bottom: 20px;
+    a{
+      width: 60px;
+      height: 60px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+      display: inline-flex;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0 10px;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(45deg,#f39c12,#3498db);
+        border-radius: 50%;
+        z-index: -1;
+        transition: 0.3s ease-in;
+      }
+      &:hover::before{
+        transform: scale(0);
+      }
+      i{
+        transition: 0.3s ease-in;
+      }
+      &:hover i{
+        background:  linear-gradient(45deg,#f39c12,#3498db);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        transform: scale(2.2);
+      }
+    }
+
+  }
+  .copyright{
+    color: #000;
+    background: rgba(189, 195, 199,.9);
+    padding: 20px;
+    font-size: 24px;
+  }
+}
+
+
+// QUERYS-------------------------------------------------------------------------
+@media screen and(max-width:767px){
+  .galeria{
+    .trabajo{
+
+      .derecha{
+        text-align: center;
+      }
+      text-align: center;
+
+    }
+  }
+}
