@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding:0;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+header{
+  .cabeza {
+    .enlaces{
+      padding: 10px ;
+      font-size: 20px;
+      a{
+          margin:10px;
+          display: inline-block;
+          text-decoration: none;
+      }
+    }
+  }
+}
+.ir-arriba{
+  display: none;
+  padding: 20px 20px 10px 20px;
+  background: #FB8C00;
+  font-size: 20px;
+  color:#fff;
+  cursor:pointer;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index: 999;
+
+}
+
+
+// -----------------------------------main--------------------------------------
+
+main{
+  .info{
+    padding: 70px;
+    .carta{
+      border-radius: 5px;
+      padding: 15px;
+      text-align: center;
+      .seccion{
+          background: #7bed9f;
+          padding: 20px;
+          height: 100%;
+      }
+      .imagen{
+      text-align: center;
+        i{
+          font-size: 50px;
+        }
+      }
+      .titulo{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        h5{
+          font-size: 24px;
+          font-weight: 300;
+        }
+      }
+      ul{
+        padding:0 20px;
+        list-style:none;
+        li{
+          border-bottom: 1px solid #fff;
+        }
+      }
+
+    }
+  }
+// FIN MAIN---------------------------------------------------------------------
+  .titulo-productos{
+    text-align: center;
+    img,h5{
+      margin-bottom: 30px;
+    }
+  }
+}
+// MARCAS--------------------------------------------------
+.marcas{
+  .marquitas{
+    padding: 20px;
+  }
+}
+// VENTAJITAS------------------------------------------------
+.ventajitas{
+margin-top: 30px;
+margin-bottom: 40px;
+  .titulo{
+    padding: 10px;
+  }
+  .logo, .titu, .descripcion{
+    text-align: center;
+  }
+  .logo{
+    font-size: 30px;
+
+    i{
+      padding: 10px 20px;
+      // padding-left: 10px;
+      // padding-right: 10px;
+      border: 1px solid #000;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+.section-carousel{
+  .carousel{
+    .carousel-item{
+      user-select: none;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
