@@ -11,10 +11,3 @@ $(window).scroll(function(){
     $('.ir-arriba').slideUp(300);
   }
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-  const elementosCarousel =document.querySelectorAll('.carousel');
-  M.Carousel.init(elementosCarousel, {
-    duration:150
-  });
-});
