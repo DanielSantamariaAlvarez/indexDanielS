@@ -1,6 +1,6 @@
-$fondo:#f2f2f2;
-$azul_primario:#5f6ad4;
-$azul_secundario:#7780da;
+$fondo:#F8EFBA;
+$azul_primario:#F97F51;
+$azul_secundario:#FEA47F;
 $gris_oscuro:#3b3b3b;
 $gris_claro:#909090;
 $texto:#292929;
@@ -121,6 +121,11 @@ header{
       padding: 0;
     }
   }
+  .single-post{
+    .categorias{
+      margin-bottom:  1.85em;
+    }
+  }
   .post{
     margin-bottom: 1.85em;
     .contenedor{
@@ -194,7 +199,7 @@ header{
       font-size: 1em;
       li{
         float:left;
-        background: $gris_oscuro;
+        background: $gris_claro;
         color:#fff;
         margin-right: 0.62em;
         font-size: 1.125em;
