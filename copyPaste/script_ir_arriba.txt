@@ -1,0 +1,39 @@
+------------------------css-----------------------------
+
+.ir-arriba{
+    display: none;
+    padding: 15px 20px 10px 20px;
+    background: #2ecc71;
+    font-size: 20px;
+    color:#fff;
+    cursor:pointer;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    border-radius: 10px;
+    z-index: 100;
+
+  }
+
+--------------------------------HTML------------------------
+  <span class="ir-arriba"><i class="fas fa-sort-up"></i></span>
+
+
+-----------------------------------js----------------------------
+
+//boton arriba
+$('.ir-arriba').click(function(){
+  $('body, html').animate({
+    scrollTop:'0px'
+  }, 300);
+});
+
+$(window).scroll(function(){
+  if($(this).scrollTop()>0){
+    $('.ir-arriba').slideDown(300);
+  }else{
+    $('.ir-arriba').slideUp(300);
+  }
+});
+
+
