@@ -25,6 +25,9 @@ body{
 .ad{
   margin-bottom: 1.25em; //16px * 1.25 = 20px
   text-align: center;
+  a{
+    width: 100%;
+  }
 }
 
 a{
@@ -204,6 +207,7 @@ header{
         margin-right: 0.62em;
         font-size: 1.125em;
         line-height: 1.125em;
+        margin-top: 5px;
         &.disable{
           padding:0.62em 0.937em;
           font-size: 1.125em;
@@ -353,5 +357,32 @@ footer{
       text-align: center;
       margin: 0;
     }
+  }
+}
+
+
+
+// ---------------------------------------MEDIAQUERYS---------------------------
+
+@media screen and(max-width:768px)
+{
+  .ad{
+    img{
+      width: 100%;
+      // mientras no se tengan ads, pos lo quito xd
+      display: none;
+    }
+  }
+  header{
+    .logo{
+      padding-bottom: 0px;
+    }
+    .redes-sociales{
+      padding-top:0px;
+    }
+
+  }
+  .paginacion{
+
   }
 }
