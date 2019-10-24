@@ -65,11 +65,10 @@ $verde: #009432;
         width: 100%;
       }
       .textos-header{
-        display: flex;
+        padding-top: 10em;
         height: 25em;
         width: 100%;
         align-items: center;
-        justify-content: center;
         flex-direction: column;
         text-align: center;
         h1{
@@ -85,7 +84,7 @@ $verde: #009432;
   main{
     .sobre-nosotros{
       .contenido-textos{
-        width: 48%;
+        width: 100%;
         h3{
           margin-bottom: 1em;
           span{
@@ -112,7 +111,7 @@ $verde: #009432;
         display: flex;
         justify-content: space-between;
         .imagen-about-us{
-          width: 48%;
+          width: 100%;
         }
       }
     }
@@ -120,27 +119,23 @@ $verde: #009432;
     // -----------------------PORTAFOLIO------------------------
     .portafolio{
       background: #f2f2f2;
+      padding: 20px 0 ;
+      margin-top: 10px;
+
       .galeria-port{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
         .imagen-port{
-          width: 24%;
-          height: 180px;
-          margin-bottom: 10px;
+          width: 100%;
+          margin-bottom: 30px;
           overflow: hidden;
           position: relative;
           cursor: pointer;
-          box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
           img{
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            display: block;
           }
           .hover-galeria{
             position: absolute;
-            width: 100%;
+            width: 90%;
             height: 100%;
             top:0;
             transform: scale(0);
@@ -166,4 +161,116 @@ $verde: #009432;
         }
       }
     }
+
+    // clientes
+    .clientes{
+      padding: 3em;
+      margin-bottom: 20px;
+      .cards{
+        padding: 20px;
+        .card{
+          background: $verde;
+          height: 100%;
+          align-items: center;
+          border-radius: 5px;
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+          text-align: center;
+          margin-bottom: 15px;
+
+          img{
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border: 2px solid #fff;
+            border-radius: 50%;
+          }
+          .contenido-texto-card{
+            width:100%;
+            color: #fff;
+            p{
+              font-weight: 300;
+              padding-top: 5px,
+            }
+          }
+        }
+      }
+    }
+
+
+    // about us
+    .about-services{
+      background: #f2f2f2;
+      padding: 3em;
+      .servicio-cont{
+        .servicio-ind{
+          width: 100%;
+          margin: auto auto;
+          img{
+            width: 90%;
+          }
+          h3{
+            text-align: center;
+            margin: 1em 0;
+          }
+          p{
+            font-weight: 300;
+            text-align: center;
+          }
+        }
+      }
+    }
   }
+
+
+      footer{
+        background: #414141;
+        padding: 60px 0 30px 0;
+        text-align: center;
+        .content-foo{
+          padding: 20px;
+          padding-bottom: 20px;
+
+          h4{
+            color: #fff;
+            border-bottom: 2px solid $verde;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+          }
+          p{
+            color:#fff;
+          }
+        }
+        .titulo-final{
+          padding-top: 1em;
+          color: #fff;
+          font-size: 1em;
+        }
+      }
+
+// media querys
+@media screen and (max-width:996px){
+  header{
+    nav{
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width:668px)
+{
+  header{
+    nav{
+    padding-right: 0;
+    padding-left: 5px;
+    }
+    .textos-header{
+      padding-top: 5.2em;
+      h1{
+        font-size: 2.5em;
+      }
+      h2{
+        font-size: 1.5em;
+      }
+    }
+  }
+}
