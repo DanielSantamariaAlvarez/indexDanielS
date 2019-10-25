@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 // BOTONES
 var servicios= $('#servicios').offset().top;
+var contacto = $('#contacto').offset().top;
 var ubicacion =$('#ubicacion').offset().top;
 
 $('#btn-servicios').on('click', function(e){
