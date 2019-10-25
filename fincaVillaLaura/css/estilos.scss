@@ -1,6 +1,6 @@
-$verde:  #1d8348 ;
+$verde:  #00CC33 ;
 $crema: #fff ;
-$gris:#ccc;
+$gris: #f2f3f4 ;
 $naranja:#e74c3c;
 $amarillo:   #FFFF00   ;
 *{
@@ -28,6 +28,9 @@ $amarillo:   #FFFF00   ;
   }
   header{
     background: $crema;
+    .navi{
+      background: $verde;
+    }
     nav{
       padding: 10px 0;
       text-align: right;
@@ -36,7 +39,7 @@ $amarillo:   #FFFF00   ;
         text-decoration: none;
         margin-right: 1.2em;
         font-size: 1.2em;
-        color: $naranja;
+        color: $amarillo;
         font-weight: 300;
         border-bottom: 1px solid transparent;
         &:hover{
@@ -49,9 +52,10 @@ $amarillo:   #FFFF00   ;
     .entrada{
       text-align: center;
       margin: auto;
+      padding: 20px;
       h2{
         font-size: 1.8em;
-        font-weight: 300;
+        font-weight: 400;
 
       }
     }
@@ -86,7 +90,7 @@ $amarillo:   #FFFF00   ;
         height: 430px;
         border: none;
         vertical-align: middle;
-        background: rgba(255,255,255,.5);
+        background: rgba(255,255,255,.6);
         border-radius: 20px;
         .sub-card{
           height: 100%;
@@ -107,7 +111,8 @@ $amarillo:   #FFFF00   ;
               align-items: center;
               align-content: center;
               img{
-
+                height: 100%;
+                width: 100%;
               }
             }
           }
