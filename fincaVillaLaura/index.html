@@ -17,20 +17,23 @@
 
    <header>
 
-     <nav class="navbar navbar-expand-lg navbar-light navi">
+     <nav class="navbar navbar-expand-lg " style="background-color: #00CC33;">
        <div class="container">
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-expanded="false" arial-label="Alternar Menú">
-           <span class="navbar-toggler-icon"></span>
+           <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
          </button>
 
          <div class="collapse navbar-collapse" id="menuNavegacion">
            <ul class="navbar-nav mr-auto">
 
              <li class="nav-item">
-               <a href="#" class="nav-link" id="btn-servicios">Servicios</a>
+               <a href="#" class="nav-link" id="btn-servicios">Galeria</a>
              </li>
              <li class="nav-item">
                <a href="#" class="nav-link" id="btn-contacto">Contacto</a>
+             </li>
+             <li class="nav-item">
+               <a href="#" class="nav-link" id="btn-ubicacion">Precios</a>
              </li>
              <li class="nav-item">
                <a href="#" class="nav-link" id="btn-ubicacion">Ubicación</a>
@@ -347,7 +350,7 @@
        </div>
      </section>
 
-     <section class="galeria2">
+     <section class="galeria2" id="galeria">
        <div class="container">
          <div class="titulo">
            <h2>
@@ -388,6 +391,63 @@
          </div>
        </div>
      </section>
+
+
+
+     <!-- precios -->
+     <section class="precios" id="precios">
+         <div class="container">
+           <div class="row">
+             <h3 class="titulo col-12 text-center ">
+               Precios
+             </h3>
+           </div>
+           <div class="row">
+               <div class="precio col-sm-4">
+                 <div class="plan verde">
+                   <p class="nombre">Básico</p>
+                   <p class="precio">$9</p>
+                   <ul class="caracteristicas">
+                     <li>1 cuenta</li>
+                     <li>10Gb de espacio</li>
+                     <li>Dominio Personal</li>
+                   </ul>
+                   <a href="#" class="btn">Contratar Ahora</a>
+                 </div>
+               </div>
+               <div class="precio col-sm-4">
+                 <div class="plan azul activo">
+                   <p class="nombre">Standard</p>
+                   <p class="precio">$19</p>
+                   <ul class="caracteristicas">
+                     <li>10 cuentas</li>
+                     <li>100Gb de espacio</li>
+                     <li>Dominio Personal</li>
+                   </ul>
+                   <a href="#" class="btn">Contratar Ahora</a>
+                 </div>
+               </div>
+               <div class="precio col-sm-4">
+                 <div class="plan naranja">
+                   <p class="nombre">Premium</p>
+                   <p class="precio">$99</p>
+                   <ul class="caracteristicas">
+                     <li>cuentas Ilimitadas</li>
+                     <li>Espacio Ilimitado</li>
+                     <li>Dominio Personal</li>
+                   </ul>
+                   <a href="#" class="btn">Contratar Ahora</a>
+                 </div>
+               </div>
+
+
+           </div>
+         </div>
+     </section>
+
+
+
+
 
      <section class="ubicacion" id="ubicacion">
        <div class="container">

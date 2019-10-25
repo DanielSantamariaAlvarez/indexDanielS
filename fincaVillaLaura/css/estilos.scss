@@ -28,26 +28,17 @@ $amarillo:   #FFFF00   ;
   }
   header{
     background: $crema;
-    .navi{
-      background: $verde;
-    }
     nav{
       padding: 10px 0;
       text-align: right;
+      color: #fff;
       a{
-        display: inline-block;
-        text-decoration: none;
-        margin-right: 1.2em;
-        font-size: 1.2em;
-        color: $amarillo;
-        font-weight: 300;
-        border-bottom: 1px solid transparent;
-        &:hover{
-          color: $naranja;
-          text-decoration: none;
-          border-bottom: 1px solid  $naranja ;
-        }
+        color: #fff;
       }
+      button{
+        color: #fff;
+      }
+
     }
     .entrada{
       text-align: center;
@@ -124,6 +115,7 @@ $amarillo:   #FFFF00   ;
 
     .galeria2{
       padding: 30px;
+      margin-bottom: 50px;
       .titulo{
         padding: 2em ;
         margin-bottom: 1em;
@@ -132,7 +124,7 @@ $amarillo:   #FFFF00   ;
         text-align: center;
       }
       .fotos{
-        height: 400px;
+        height: 100%;
         margin-bottom: 10px;
         .material-placeholder{
         height: 100%;
@@ -145,6 +137,10 @@ $amarillo:   #FFFF00   ;
           }
         }
       }
+    }
+
+    .precios{
+      background: #ccc;
     }
   }
 

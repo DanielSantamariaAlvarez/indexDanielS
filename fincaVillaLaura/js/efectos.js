@@ -12,22 +12,17 @@ $(window).scroll(function(){
   }
 });
 
-document.addEventListener('DOMContentLoaded', ()=> {
-  const imgLigthBox = document.querySelectorAll('.materialboxed');
-  M.Materialbox.init(imgLigthBox);
-});
-
 
 
 // BOTONES
-var servicios= $('#servicios').offset().top;
+var galeria= $('#galeria').offset().top;
 var contacto = $('#contacto').offset().top;
 var ubicacion =$('#ubicacion').offset().top;
 
 $('#btn-servicios').on('click', function(e){
   e.preventDefault();
   $('html, body').animate({
-      scrollTop: servicios
+      scrollTop: galeria
 /*tiempo que tarda la animación --> */    }, 500);
 });
 
