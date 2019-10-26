@@ -2,9 +2,9 @@ $verde:  #00CC33 ;
 $crema: #fff ;
 $gris: #f2f3f4 ;
 $naranja: #ff5722 ;
+$naranja_oscuro:    #f4511e  ;
 $amarillo:   #FFFF00   ;
 *{
-  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -22,16 +22,18 @@ $amarillo:   #FFFF00   ;
   z-index: 100;
 
     &:hover{
-
+      background: $naranja_oscuro;
     }
 
   }
   header{
     background: $crema;
     nav{
+      font-family: 'Roboto', sans-serif;
       padding: 10px 0;
       text-align: right;
       color: #fff;
+      font-size: 1.3em;
       a{
         color: #fff;
       }
@@ -45,9 +47,11 @@ $amarillo:   #FFFF00   ;
       margin: auto;
       padding: 20px;
       h2{
+        font-family: 'Playfair Display', serif;
         font-size: 1.8em;
         font-weight: 600;
-        text-shadow: 4px 4px 4px #aaa;
+        text-shadow: 0px 0px 0px #aaa;
+        color: $verde;
       }
       p{
         font-family: 'Roboto',sans-serif;
@@ -64,13 +68,15 @@ $amarillo:   #FFFF00   ;
       text-align: center;
       padding: 20px;
       .titulo{
+        font-family: 'Playfair Display', serif;
         padding: 1em ;
         margin-bottom: 1em;
         color:$amarillo;
-        font-weight: 300;
+        font-weight: 400;
 
       }
       .descripcion{
+        font-family: 'Roboto', sans-serif;
         margin: auto;
         padding: 10px 5em;
         color: #fff;
@@ -81,6 +87,7 @@ $amarillo:   #FFFF00   ;
         vertical-align: middle;
       }
       .card{
+        font-family: 'Roboto', sans-serif;
         margin: 20px;
         padding: 1em;
         height: 360px;
@@ -123,10 +130,11 @@ $amarillo:   #FFFF00   ;
       padding: 30px;
       margin-bottom: 50px;
       .titulo{
+        font-family: 'Playfair Display', serif;
         padding: 2em ;
         margin-bottom: 1em;
         color:$naranja;
-        font-weight: 300;
+        font-weight: 400;
         text-align: center;
       }
       .fotos{
@@ -153,13 +161,15 @@ $amarillo:   #FFFF00   ;
       padding: 50px;
       text-align: center;
       .titulo{
+        font-family: 'Playfair Display', serif;
         font-size: 2em;
-        font-weight: 300;
+        font-weight: 400;
         color: $naranja;
         margin-bottom: 50px;
 
       }
       .descripcion{
+        font-family: 'Roboto', sans-serif;
         margin: auto;
         text-align: center;
         h3,h4{
@@ -173,6 +183,7 @@ $amarillo:   #FFFF00   ;
   }
 
 footer{
+  font-family: 'Playfair Display', serif;
   background: $verde;
   color: #fff;
   text-align: center;
