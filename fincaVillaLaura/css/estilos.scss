@@ -1,10 +1,10 @@
 $verde:  #00CC33 ;
 $crema: #fff ;
 $gris: #f2f3f4 ;
-$naranja:#e74c3c;
+$naranja: #ff5722 ;
 $amarillo:   #FFFF00   ;
 *{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -46,8 +46,13 @@ $amarillo:   #FFFF00   ;
       padding: 20px;
       h2{
         font-size: 1.8em;
-        font-weight: 400;
-
+        font-weight: 600;
+        text-shadow: 4px 4px 4px #aaa;
+      }
+      p{
+        font-family: 'Roboto',sans-serif;
+        font-weight: 300;
+        font-style: italic;
       }
     }
   }
@@ -142,7 +147,39 @@ $amarillo:   #FFFF00   ;
     .precios{
       background: #ccc;
     }
+
+
+    .ubicacion{
+      padding: 50px;
+      text-align: center;
+      .titulo{
+        font-size: 2em;
+        font-weight: 300;
+        color: $naranja;
+        margin-bottom: 50px;
+
+      }
+      .descripcion{
+        margin: auto;
+        text-align: center;
+        h3,h4{
+          font-weight: 300;
+        }
+      }
+      iframe{
+        width: 100%;
+      }
+    }
   }
+
+footer{
+  background: $verde;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1em;
+  padding: 10px;
+}
 
   @media screen and (max-width:996px){
 
