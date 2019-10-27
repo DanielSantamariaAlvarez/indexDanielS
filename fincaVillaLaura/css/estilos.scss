@@ -31,7 +31,6 @@ $amarillo:   #FFFF00   ;
     nav{
       font-family: 'Roboto', sans-serif;
       padding: 10px 0;
-      text-align: right;
       color: #fff;
       font-size: 1.3em;
       a{
@@ -136,6 +135,22 @@ $amarillo:   #FFFF00   ;
         color:$naranja;
         font-weight: 400;
         text-align: center;
+      }
+      .ver-mas{
+        padding: 10px;
+        margin-bottom: 20px;
+        a{
+          background: $naranja;
+          padding: 20px;
+          color: #fff;
+          border-radius: 50px;
+
+          &:hover{
+            text-decoration: none;
+            background: $naranja_oscuro;
+
+          }
+        }
       }
       .fotos{
         height: 100%;

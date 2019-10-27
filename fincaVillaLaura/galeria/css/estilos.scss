@@ -1,0 +1,48 @@
+$rojo:#E84C3D;
+$rojo-oscuro: #c62828 ;
+$rojo-clarito: #e74c3c ;
+
+h1{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px,
+}
+
+.categoryList{
+  width: 100%;
+  .contenedorcito{
+    display: flex;
+  	flex-direction: column;
+    .category_item{
+      display: block;
+      padding: 10px 0;
+      background: $rojo;
+
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 50px;
+      &:hover{
+        background: $rojo-oscuro;
+      }
+    }
+  }
+  .ct_item_active{
+    background: $rojo-clarito;
+  }
+}
+
+
+.galeria{
+  .fotos{
+    .product-item{
+      transition: all .4s;
+        img{
+          width: 100%;
+          border-radius: 20px;
+          margin: 5px;
+          padding: 5px;
+          cursor: pointer;
+      }
+    }
+  }
+}
