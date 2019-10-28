@@ -1,10 +1,13 @@
 $rojo:#E84C3D;
 $rojo-oscuro: #c62828 ;
 $rojo-clarito: #e74c3c ;
+$naranja: #ff5722 ;
 
 h1{
   border-bottom: 1px solid #ccc;
-  padding-bottom: 20px,
+  padding-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  color:$naranja;
 }
 
 .categoryList{
@@ -25,9 +28,9 @@ h1{
         background: $rojo-oscuro;
       }
     }
-  }
-  .ct_item_active{
-    background: $rojo-clarito;
+    .ct_item_active{
+      background: $rojo-oscuro;
+    }
   }
 }
 
@@ -41,7 +44,6 @@ h1{
           border-radius: 20px;
           margin: 5px;
           padding: 5px;
-          cursor: pointer;
       }
     }
   }

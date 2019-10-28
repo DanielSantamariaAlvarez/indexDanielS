@@ -35,10 +35,10 @@ $(document).ready(function(){
 	});
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const imgL = document.querySelectorAll('.materialboxed');
-  M.Materialbox.init(imgL, {
-		inDuration: 500,
-		outDuration: 500
-	});
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//   const imgL = document.querySelectorAll('.materialboxed');
+//   M.Materialbox.init(imgL, {
+// 		inDuration: 500,
+// 		outDuration: 500
+// 	});
+// });
