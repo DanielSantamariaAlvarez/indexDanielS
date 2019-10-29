@@ -1,4 +1,4 @@
-$verde:  #00CC33 ;
+$verde:  #34bf49 ;
 $crema: #fff ;
 $gris: #f2f3f4 ;
 $naranja: #ff5722 ;
@@ -35,6 +35,11 @@ $amarillo:   #FFFF00   ;
       font-size: 1.3em;
       a{
         color: #fff;
+        border-bottom: 1px solid transparent;
+        &:hover{
+          color:$amarillo;
+          border-bottom: 1px solid $amarillo;
+        }
       }
       button{
         color: #fff;
