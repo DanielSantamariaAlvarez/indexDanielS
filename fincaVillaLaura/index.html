@@ -10,6 +10,13 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Roboto:300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="galeria/css/lightbox.min.css">
   <script src="galeria/js/lightbox-plus-jquery.min.js"></script>
+  <!-- CDN VideoJS: CSS -->
+  <!-- <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/video-js.css">
+
+  <!-- CDN VideoJS: JS -->
+  <!-- <script src="https://vjs.zencdn.net/7.2.3/video.js"></script> -->
+  <script src="js/video.js"></script>
   <title>Finca Villa Laura</title>
 </head>
 <body>
@@ -357,13 +364,17 @@
              Galería
            </h2>
          </div>
-         <div class="ver-mas">
-           <div class="row">
-             <div class="col-md-4">
-               <a target="_blank" href="galeria/galeria.html">Ver más</a>
-             </div>
+         <div class="row">
+           <div class="col-md-2"></div>
+           <div class="col-md-8 col-sm-12">
+             <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" controls data-setup="{}" id="fm-video">
+       				<source src="img/villaLauraVideo.mp4" type="video/mp4">
+       			</video>
            </div>
          </div>
+
+
+
          <div class="row fotos">
            <div class="col-md-4 col-sm-12">
              <div class="material-placeholder">
@@ -411,6 +422,14 @@
              </div>
            </div>
          </div>
+
+         <div class="ver-mas">
+           <div class="row">
+             <div class="col-md-4">
+               <a target="_blank" href="galeria/galeria.html">Ver más</a>
+             </div>
+           </div>
+         </div>
        </div>
      </section>
 
@@ -424,46 +443,6 @@
                ¿Precios?
              </h3>
            </div>
-           <!-- <div class="row">
-               <div class="precio col-sm-4">
-                 <div class="plan verde">
-                   <p class="nombre">Básico</p>
-                   <p class="precio">$9</p>
-                   <ul class="caracteristicas">
-                     <li>1 cuenta</li>
-                     <li>10Gb de espacio</li>
-                     <li>Dominio Personal</li>
-                   </ul>
-                   <a href="#" class="btn">Contratar Ahora</a>
-                 </div>
-               </div>
-               <div class="precio col-sm-4">
-                 <div class="plan azul activo">
-                   <p class="nombre">Standard</p>
-                   <p class="precio">$19</p>
-                   <ul class="caracteristicas">
-                     <li>10 cuentas</li>
-                     <li>100Gb de espacio</li>
-                     <li>Dominio Personal</li>
-                   </ul>
-                   <a href="#" class="btn">Contratar Ahora</a>
-                 </div>
-               </div>
-               <div class="precio col-sm-4">
-                 <div class="plan naranja">
-                   <p class="nombre">Premium</p>
-                   <p class="precio">$99</p>
-                   <ul class="caracteristicas">
-                     <li>cuentas Ilimitadas</li>
-                     <li>Espacio Ilimitado</li>
-                     <li>Dominio Personal</li>
-                   </ul>
-                   <a href="#" class="btn">Contratar Ahora</a>
-                 </div>
-               </div>
-
-
-           </div> -->
          </div>
      </section>
 
