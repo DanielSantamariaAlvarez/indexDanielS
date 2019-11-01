@@ -185,6 +185,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .informacion-producto{
       margin: 0 30px;
+      width: 330px;
       &:before{
         content: "";
         height: 50px;
@@ -202,6 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     .descripcion{
       font-size: 22px;
       color: #fff;
+      width: 100%;
     }
   }
 
@@ -229,6 +231,7 @@ h1, h2, h3, h4, h5, h6 {
 
   // UBICACION--------------------------------------------------------------
   .ubicacion{
+    padding-top: 40px;
     .titulo{
       font-family: 'Playfair Display', serif;
         font-size: 2em;
@@ -272,6 +275,21 @@ h1, h2, h3, h4, h5, h6 {
     .productos{
       .descripcion{
         color: #fff;
+      }
+    }
+    .fp-controlArrow.fp-prev{
+      left: 20px;
+    }
+  }
+  .ubicacion{
+    .titulo{
+      margin-bottom: 10px;
+      margin-top: 60px;
+    }
+    .descripcion{
+      h4{
+
+        font-size: 18px;
       }
     }
   }
