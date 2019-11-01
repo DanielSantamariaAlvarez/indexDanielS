@@ -1,0 +1,277 @@
+$verde: #279b37;
+$verdeClaro: #34bf49;
+
+
+
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.texto-naranja {
+    font-weight: 700;
+    color: orange;
+}
+.texto-verde {
+    font-weight: 700;
+    color: $verde;
+}
+.texto-verde-claro {
+    font-weight: 700;
+    color: $verdeClaro;
+}
+
+.texto-blanco {
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 6px 6px 6px #000;
+    font-style: italic;
+}
+
+.grande{
+  font-size: 32px;
+  text-shadow: 6px 6px 6px #000;
+}
+
+.texto-negro {
+	color: #000;
+}
+
+// clases de fullPage
+#fp-nav{
+  ul{
+    li{
+      a{
+        span{
+          background: orange;
+          text-shadow: 6px 6px 6px #000;
+        }
+      }
+
+      .fp-tooltip{
+        color: orange;
+
+      }
+    }
+  }
+}
+
+
+// menu de navegacion
+
+.nav{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 70;
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  li, a{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: #fff;
+    transition: .5s ease;
+
+  }
+  li{
+    &.active{
+      border-bottom: 2px solid orange;
+
+    }
+  }
+}
+
+.menu{
+  li{
+    a{
+      transition: .5s ease;
+      margin:0;
+      padding: 0;
+    }
+    &.active, &:hover{
+      a{
+        color: orange;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+/* ----------------------
+    HEADER
+  --------------------------*/
+
+  .header{
+    background: url('../media/casa.JPG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contenedor-titulo{
+      text-align: center;
+      position: relative;
+      z-index: 99;
+      font-family: 'Playfair Display', sans-serif;
+    }
+    .titulo{
+      font-size: 70px;
+      text-align: center;
+      text-shadow: 6px 6px 6px #000;
+      text-transform: uppercase;
+
+    }
+    .contenedor-icono{
+      position: absolute;
+      z-index: 99;
+      bottom: 3%;
+      left: 50%;
+      font-size: 40px;
+      animation: bajar-subir 1s ease infinite;
+    }
+  }
+
+  @keyframes bajar-subir{
+    0%{ transform: translateY(20px);}
+    25%{ transform: translateY(0);}
+    100%{ transform: translateY(20px);}
+  }
+
+
+
+  .productos{
+    article{
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      &:nth-child(1){
+        background-image: url('../media/amanecer2.JPG');
+      }
+      &:nth-child(2){
+        background-image: url('../media/piscina5.JPG');
+      }
+      &:nth-child(3){
+        background-image: url('../media/comida.JPG');
+      }
+      &:nth-child(4){
+        background-image: url('../media/parque4.JPG');
+      }
+      &:nth-child(5){
+        background-image: url('../media/piscina2.jpeg');
+      }
+      &:nth-child(6){
+        background-image: url('../media/cabalgata.JPG');
+      }
+    }
+    .informacion-producto{
+      margin: 0 30px;
+      &:before{
+        content: "";
+        height: 50px;
+        width: 2px;
+        display: inline-block;
+        background: orange;
+        position: absolute;
+        top: 50%;
+        margin:-10px;
+      }
+    }
+    .modelo{
+      font-size: 45px;
+    }
+    .descripcion{
+      font-size: 22px;
+      color: #fff;
+    }
+  }
+
+
+
+  // FLECHAS DEL slide
+  .fp-controlArrow.fp-next,.fp-prev{
+    top: 95%;
+  }
+
+  .fp-controlArrow.fp-prev{
+    left: 80%;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent orange transparent transparent;
+  }
+
+  .fp-controlArrow.fp-next{
+    right: 50px;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent orange;
+  }
+
+
+
+
+  // UBICACION--------------------------------------------------------------
+  .ubicacion{
+    .titulo{
+      font-family: 'Playfair Display', serif;
+        font-size: 2em;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 50px;
+    }
+    .descripcion{
+      font-family: 'PlayFair Display', sans-serif;
+        margin: auto;
+        text-align: center;
+    }
+    iframe{
+        width: 100%;
+      }
+  }
+
+
+
+  // MEDIA QUERYS-----------------------------------------------------------------
+  @media screen and(max-width: 768px){
+    .menu li a,
+    .menu, li.active a{
+      font-size: 18px;
+    }
+    .modelo{
+      font-size: 40px;
+    }
+  }
+
+  @media screen and(max-width:576px){
+    header{
+      .titulo{
+        font-size: 60px;
+      }
+    }
+    .informacion-producto{
+      position: absolute;
+      top: 70%;
+    }
+    .productos{
+      .descripcion{
+        color: #fff;
+      }
+    }
+  }
