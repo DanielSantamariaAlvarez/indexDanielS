@@ -81,13 +81,16 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   z-index: 70;
   width: 100%;
-  margin: 0;
-  padding: 0 20px;
+  padding: 10px 20px;
   background: rgba(0, 0, 0, .3);
+  ul{
+    margin: 0;
+  }
   li, a{
     display: inline-block;
-    margin-top: 10px;
-    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-right: 12px;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
@@ -147,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
       position: absolute;
       z-index: 99;
       bottom: 3%;
-      left: 50%;
+      left: 47%;
       font-size: 40px;
       animation: bajar-subir 1s ease infinite;
     }
@@ -233,22 +236,20 @@ h1, h2, h3, h4, h5, h6 {
 
   // UBICACION--------------------------------------------------------------
   .ubicacion{
-    padding-top: 40px;
     .titulo{
       font-family: 'Playfair Display', serif;
-        font-size: 2em;
-        font-weight: 400;
-        color: #000;
-        margin-bottom: 50px;
+      font-size: 2em;
+      font-weight: 400;
+      color: #000;
     }
     .descripcion{
       font-family: 'PlayFair Display', sans-serif;
-        margin: auto;
-        text-align: center;
+      margin: auto;
+      text-align: center;
     }
     iframe{
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
 
 
@@ -267,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
   @media screen and(max-width:576px){
     .nav{
       li,a{
-        margin:10px;
+        margin:8px;
       }
     }
     header{
@@ -285,13 +286,13 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
     .fp-controlArrow.fp-prev{
-      left: 20px;
+      left: 40px;
     }
   }
   .ubicacion{
     .titulo{
       margin-bottom: 10px;
-      margin-top: 60px;
+      margin-top: 100px;
     }
     .descripcion{
       h4{
