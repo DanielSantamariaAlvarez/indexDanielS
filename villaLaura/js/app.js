@@ -9,9 +9,9 @@ const seccionesPagina = new fullpage('#fullpage',{
   loopBottom: false,
   navigation: true,
   menu: '#menu',
-  anchors: ['inicio', 'servicios','ubicacion', 'contacto'],
+  anchors: ['inicio', 'servicios','contacto', 'ubicacion'],
   navigationTooltips: ['Inicio', 'Productos', 'Contacto'],
   showActiveTooltip: false,
-  sectionsColor : ['#000', '#c2c2c2','#c2c2c2' , '#000'],
+  sectionsColor : ['#000', '#c2c2c2','#000' , '#c2c2c2'],
   verticalCentered: true,
 });

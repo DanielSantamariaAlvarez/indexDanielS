@@ -1,5 +1,9 @@
 $verde: #279b37;
 $verdeClaro: #34bf49;
+$azul-claro:#a9eee6;
+$crema:#fefaec;
+$salmon:#f38181;
+$morado:#625772;
 
 
 
@@ -253,6 +257,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 2em;
       font-weight: 400;
       color: #000;
+      margin-bottom: 20px;
     }
     .descripcion{
       font-family: 'PlayFair Display', sans-serif;
@@ -261,6 +266,16 @@ h1, h2, h3, h4, h5, h6 {
     }
     iframe{
       width: 100%;
+    }
+    .footer{
+      background:#000;
+      font-weight: 300;
+      font-size: 22px;
+      margin-bottom: 0;
+      h2{
+        color:#fff;
+        padding: 10px;
+      }
     }
   }
 
