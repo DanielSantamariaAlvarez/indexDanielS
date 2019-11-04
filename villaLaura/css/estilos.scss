@@ -154,6 +154,15 @@ h1, h2, h3, h4, h5, h6 {
       left: 47%;
       font-size: 40px;
       animation: bajar-subir 1s ease infinite;
+      p{
+        a{
+
+          &:hover{
+            color:orange;
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
 
@@ -170,10 +179,10 @@ h1, h2, h3, h4, h5, h6 {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      &:nth-child(1){
+      &:nth-child(2){
         background-image: url('../media/amanecer2.JPG');
       }
-      &:nth-child(2){
+      &:nth-child(1){
         background-image: url('../media/piscina5.JPG');
       }
       &:nth-child(3){
@@ -205,11 +214,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     .modelo{
       font-size: 45px;
+      text-shadow: 6px 6px 6px #000;
     }
     .descripcion{
       font-size: 22px;
       color: #fff;
       width: 100%;
+      text-shadow: 6px 6px 6px #000;
     }
   }
 
