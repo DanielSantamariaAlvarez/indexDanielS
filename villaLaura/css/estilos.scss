@@ -148,7 +148,6 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 70px;
       text-align: center;
       text-shadow: 6px 6px 6px #000;
-      text-transform: uppercase;
 
     }
     .contenedor-icono{
@@ -377,9 +376,11 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 60px;
       }
     }
-    .informacion-producto{
-      position: absolute;
-      top: 65%;
+    .productos{
+      .informacion-producto{
+        position: absolute;
+        top: 55%;
+      }
     }
     .productos{
       .descripcion{
@@ -431,6 +432,102 @@ h1, h2, h3, h4, h5, h6 {
             font-size: 18px;
           }
         }
+      }
+    }
+  }
+
+  @media screen and(max-width:330px){
+    .nav{
+      li,a{
+        margin:3px;
+        font-size: 9px;
+      }
+    }
+    header{
+      .titulo{
+        margin-top: 10px;
+        line-height: 30px;
+        span{
+          font-size: 40px;
+        }
+      }
+      .grande{
+        font-size: 25px;
+      }
+      .pequeno{
+        font-size: 20px;
+      }
+    }
+
+    .productos{
+      .informacion-producto{
+        width: 280px;
+        top:50%;
+      }
+      .modelo{
+        font-size: 25px;
+      }
+      .descripcion{
+        font-size: 16px;
+      }
+    }
+
+    .ubicacion{
+      .titulo{
+        margin-bottom: 5px;
+        margin-top: 50px;
+      }
+      .descripcion{
+        h4{
+          font-size: 15px;
+        }
+      }
+    }
+
+    .precios{
+      .cabeza{
+        margin-top: 50px;
+        margin-bottom: 1px;
+        height: 30vh;
+        padding: 10px;
+        line-height: 15px;
+        p{
+          font-size: 16px;
+          line-height: 13px;
+          margin-bottom: 5px;
+        }
+        .mini{
+          font-size: 14px;
+        }
+      }
+      .cuerpo{
+        .card{
+          height: 100%;
+          margin-top: 1px;
+          h4,h5,h6{
+            padding: 0px;
+          }
+          h4{
+            font-size: 16px;
+          }
+          h5{
+            font-size: 13px;
+          }
+          h6{
+            font-size: 11px;
+          }
+        }
+      }
+    }
+    .ubicacion{
+      .titulo{
+        font-size: 18px;
+      }
+      h3{
+        font-size: 14px;
+      }
+      iframe{
+        height: 100%;
       }
     }
   }
