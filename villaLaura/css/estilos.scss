@@ -247,6 +247,59 @@ h1, h2, h3, h4, h5, h6 {
     border-color: transparent transparent transparent orange;
   }
 
+  // Precios---------------------------------------------------------------
+
+  .precios{
+    background-image:  url('../media/piscina2.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .cabeza{
+      background: orange;
+      box-shadow: 10px 10px 10px #000 ;
+      height: 30vh;
+      color:#fff;
+      text-align: center;
+      padding: 30px;
+      margin-top: 70px;;
+      margin-bottom: 30px;
+      p{
+        font-size: 28px;
+        font-weight: 400;
+      }
+      .mini{
+        font-size: 23px;
+        font-weight: 300;
+      }
+    }
+    .cuerpo{
+      height: 300px;
+      .card{
+        height: 100%;
+        background: $crema;
+        box-shadow: 10px 10px 10px #000 ;
+        h4,h5,h6{
+          padding: 10px;
+        }
+        h4{
+          font-weight: 400;
+          font-size: 35px;
+        }
+        h5{
+          font-size: 28px;
+          color: orange;
+          &::before{
+            content:"$ ";
+          }
+        }
+        h6{
+          font-size: 20px;
+        }
+
+      }
+    }
+  }
+
 
 
 
@@ -290,6 +343,27 @@ h1, h2, h3, h4, h5, h6 {
     .modelo{
       font-size: 40px;
     }
+    .precios{
+      .cabeza{
+        margin-top: -110px;
+        margin-bottom: 30px;
+        height: 20vh;
+        p{
+          font-size: 25px;
+        }
+        .mini{
+          font-size: 20px;
+        }
+      }
+      .cuerpo{
+        .card{
+          height: 100%;
+          h4{
+            font-size: 30px;
+          }
+        }
+      }
+    }
   }
 
   @media screen and(max-width:576px){
@@ -315,15 +389,48 @@ h1, h2, h3, h4, h5, h6 {
     .fp-controlArrow.fp-prev{
       left: 40px;
     }
-  }
-  .ubicacion{
-    .titulo{
-      margin-bottom: 10px;
-      margin-top: 100px;
+    .ubicacion{
+      .titulo{
+        margin-bottom: 10px;
+        margin-top: 100px;
+      }
+      .descripcion{
+        h4{
+          font-size: 18px;
+        }
+      }
     }
-    .descripcion{
-      h4{
-        font-size: 18px;
+
+    .precios{
+      .cabeza{
+        margin-top: 20px;
+        margin-bottom: 15px;
+        height: 30vh;
+        padding: 10px;
+        p{
+          font-size: 19px;
+        }
+        .mini{
+          font-size: 16px;
+        }
+      }
+      .cuerpo{
+        .card{
+          height: 100%;
+          margin-top: 5px;
+          h4,h5,h6{
+            padding: 1px;
+          }
+          h4{
+            font-size: 22px;
+          }
+          h5{
+            font-size: 20px;
+          }
+          h6{
+            font-size: 18px;
+          }
+        }
       }
     }
   }
