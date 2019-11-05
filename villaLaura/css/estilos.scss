@@ -297,6 +297,7 @@ h1, h2, h3, h4, h5, h6 {
 
       }
     }
+
   }
 
 
@@ -304,6 +305,8 @@ h1, h2, h3, h4, h5, h6 {
 
   // UBICACION--------------------------------------------------------------
   .ubicacion{
+    padding-bottom: 0px;
+    position: relative;
     .titulo{
       font-family: 'Playfair Display', serif;
       font-size: 2em;
@@ -319,11 +322,13 @@ h1, h2, h3, h4, h5, h6 {
     iframe{
       width: 100%;
     }
-    .footer{
+    .foooter{
       background:#000;
+      position: absolute;
       font-weight: 300;
       font-size: 22px;
-      margin-bottom: 0;
+      width: 100%;
+      bottom: 0px;
       h2{
         color:#fff;
         padding: 10px;
@@ -485,19 +490,20 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .precios{
+      padding-top: 20px;
       .cabeza{
         margin-top: 50px;
         margin-bottom: 1px;
-        height: 30vh;
+        height: 25vh;
         padding: 10px;
-        line-height: 15px;
+        line-height: 18px;
         p{
-          font-size: 16px;
+          font-size: 18px;
           line-height: 13px;
           margin-bottom: 5px;
         }
         .mini{
-          font-size: 14px;
+          font-size: 16px;
         }
       }
       .cuerpo{
@@ -518,6 +524,8 @@ h1, h2, h3, h4, h5, h6 {
           }
         }
       }
+
+
     }
     .ubicacion{
       .titulo{

@@ -10,7 +10,7 @@ const seccionesPagina = new fullpage('#fullpage',{
   navigation: true,
   menu: '#menu',
   anchors: ['inicio', 'servicios','contacto', 'ubicacion'],
-  navigationTooltips: ['Inicio', 'Productos', 'Contacto'],
+  navigationTooltips: ['Inicio', 'Productos', 'Precios' ,'Contacto'],
   showActiveTooltip: false,
   sectionsColor : ['#000', '#c2c2c2','#9f9fa3' , '#c2c2c2'],
   verticalCentered: true,
