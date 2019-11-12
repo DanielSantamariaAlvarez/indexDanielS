@@ -2,12 +2,14 @@ $rojo:#E84C3D;
 $rojo-oscuro: #c62828 ;
 $rojo-clarito: #e74c3c ;
 $naranja: #ff5722 ;
+$verde:  #34bf49 ;
+$verde-claro: #007944;
 
 h1{
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
   font-family: 'Playfair Display', serif;
-  color:$naranja;
+  color:$verde;
 }
 
 .categoryList{
@@ -18,18 +20,18 @@ h1{
     .category_item{
       display: block;
       padding: 10px 0;
-      background: $rojo;
+      background: $verde;
 
       text-align: center;
       text-decoration: none;
       color: #fff;
       border-radius: 50px;
       &:hover{
-        background: $rojo-oscuro;
+        background: $verde-claro;
       }
     }
     .ct_item_active{
-      background: $rojo-oscuro;
+      background: $verde-claro;
     }
   }
 }

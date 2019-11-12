@@ -144,7 +144,10 @@ $amarillo:   #FFFF00   ;
       /* ------------------------- */
       /* Estilos CSS del Reproductor */
       /* ------------------------- */
-
+      .videos{
+        border-bottom: 1px solid $naranja;
+        padding-bottom: 20px;
+      }
       .fm-video {
         width: 100%;
         box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
