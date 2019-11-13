@@ -147,6 +147,9 @@ $amarillo:   #FFFF00   ;
       .videos{
         border-bottom: 1px solid $naranja;
         padding-bottom: 20px;
+        .videoss{
+          margin-bottom: 15px;
+        }
       }
       .fm-video {
         width: 100%;
@@ -219,9 +222,7 @@ $amarillo:   #FFFF00   ;
       }
     }
 
-    .precios{
-      background: #ccc;
-    }
+
 
 
     .ubicacion{
